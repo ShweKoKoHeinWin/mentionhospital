@@ -1,0 +1,331 @@
+/*Quicksand font*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*progress*/
+#progress {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+#progressvalues {
+	width: 80%;
+	height: 80%;
+	color: #eee;
+	background: #f7f;
+	border-radius: 50%;
+	font-weight: bold;
+	display: grid;
+	place-items: center;
+
+}
+
+/*START HEADER*/
+.header-intros {
+	height: 50px;
+	background: darkblue;
+	color: #f1f1f1;
+}
+
+.header-intros .infos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	 font-size: 12px;
+	 font-weight: bold;
+}
+
+.carousel-item {
+	height: 60vh;
+}
+
+.banners1,
+.banners2,
+.banners3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../assets/img/banner/banner4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banners2 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../assets/img/banner/banner5.jpg');
+}
+
+.banners3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../assets/img/banner/banner6.jpg');
+}
+
+.btn-blues {
+	background-color: darkblue;
+	color: #f1f1f1;
+}
+/*End Header Section*/
+
+/*START  FEATURES*/
+.iconboxes {
+	background: #fff;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+	padding: 50px 20px;
+	position: relative;
+}
+
+.icons {
+	width: 70px;
+	height: 70px;
+	color: #f1f1f1;
+	background-color: darkcyan;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: calc( 50% - 35px );
+	top: -35px;
+}
+
+.iconboxes:hover .icons {
+	background: none;
+	color: darkcyan;
+	border: solid 2px darkcyan;
+}
+/*END FEATURES*/
+
+/*START  ABOUT*/
+.fromlefts {
+animation: fromleft 3s;
+}
+@keyframes fromleft {
+	from{
+		transform: translateX(-30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.fromrights {
+animation: fromright 3s;
+}
+@keyframes fromright{
+	from{
+		transform: translateX(30px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+/*END  ABOUT*/
+
+/*START  ADVERTISE*/
+
+#advertise {
+	height: 300px;
+	background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('../assets/img/banner/banner1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	 color: #f1f1f1;
+	 text-shadow: -5px 0 10px #000;
+	display: flex;
+	align-items: center;
+}
+
+/*END ADVERTISE*/
+
+/*START DEPARTMENT*/
+.dept-boxes {
+ 	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+ 	border-radius: 10px;
+ 	position: relative;
+ 	overflow: hidden;
+}
+.dept-boxes img {
+ 	width: 100%;
+ 	object-fit: cover;
+ 	transition: 0.5s;
+}
+.dept-boxes .d-contents {
+ 	width: 80%;
+ 	height: 100%;
+ 	background: #f1f1f1;
+ 	text-align: center;
+ 	position: absolute;
+ 	left: 10%;
+ 	top:  90%;
+ 	transition: 0.5s;
+}
+.dept-boxes a {
+ 	display: inline-block;
+ 	background: steelblue;
+ 	color: #f1f1f1;
+ 	font-size: 14px;
+ 	text-decoration: none;
+ 	padding: 10px 15px;
+ 	border-radius: 20px;
+ 	margin-top: 10px;
+ 	opacity: 0;
+ 	transition: 2s;
+}
+.dept-boxes:hover .d-contents {
+ 	width: 100%;
+ 	height: 70%;
+ 	left: 0;
+ 	top: 30%;
+}
+.dept-boxes:hover a {
+ 	opacity: 1;
+}
+.dept-boxes:hover img {
+	transform: scale(1.2);
+}
+.dept-boxes h3 {
+	color: steelblue;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-top: 6px;
+}
+
+
+ /*END DEPARTMENT*/
+
+
+/*START  PRICING */
+
+.pricing-cards {
+	background: #fefefe;
+	text-align: center;
+	padding-bottom: 30px;
+	transition: 0.5s;
+}
+.pricing-cards:hover {
+	box-shadow: 5px 5px 10px rgba(0, 0, 0,0.5);
+	transform: translateY(-20px);
+}
+.pricing-cards .pricing-headers {
+	padding: 40px 20px;
+	border-bottom: 2px solid #f3f3f3;
+	transition: 0.5s;
+}
+.pricing-cards:hover .pricing-headers {
+	background: linear-gradient(-90deg, skyblue, blue);
+	color: #f1f1f1;
+}
+
+.pricing-cards .prices {
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.pricing-cards .pricing-features ul li {
+	list-style: none;
+	margin: 10px 0;
+}
+.pricing-cards .btn-pricings {
+	background: linear-gradient(-90deg, skyblue, blue);
+	color: #f1f1f1;
+	font-weight: bold;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 30px;
+	transition: 0.5s;
+}
+.pricing-cards:hover .btn-pricings {
+	background: linear-gradient(90deg, skyblue, blue);
+}
+
+.movefromrights {
+	animation: movefromright 0.7s;
+}
+@keyframes movefromright {
+	from {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+
+.movefromlefts {
+	animation: movefromleft 0.7s;
+}
+@keyframes movefromleft {
+	from {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+.movefrombottoms {
+	animation: movefrombottom 0.7s;
+}
+@keyframes movefrombottom {
+	from{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+/*END  PRICING*/
+
+
+/*START  JOIN  US*/
+.customerforms {
+	border: 2px solid #ccc;
+	background: #dddd;
+	padding: 30px;
+}
+
+.socialicons a {
+	color: #f1f1f1;
+	padding: 5px;
+	border: 2px solid #f4f4f4;
+
+}
+.socialicons a:hover{
+	color: #6d7;
+	border: 2px solid #6d7
+}
+
+.footerlinks{
+	color: #eee;
+	font-size: 13px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.footerlinks:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+	letter-spacing: 1px;
+}
+/*END JOIN US*/
+
+/*max-width : 800px*/
+@media (max-width: 900px) {
+	.header-intros {
+		display: none;
+	}
+}
